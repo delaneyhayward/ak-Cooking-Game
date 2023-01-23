@@ -20,7 +20,7 @@ public class HelloApplication extends Application {
 int score = 0;
 int mistakes = 0;
 boolean gameOver = false;
-String recipe = "Eggs";
+String recipe = "Flour";
 
 public static void main(String[] args) {
 launch(args);
