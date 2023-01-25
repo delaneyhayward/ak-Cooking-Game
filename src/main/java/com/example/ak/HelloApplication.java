@@ -20,14 +20,15 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class HelloApplication extends Application {
+public class Main extends Application {
     int score = 0;
     int mistakes = 0;
     boolean gameOver = false;
     String recipe = "Marshmallows";
     SimpleBooleanProperty gameStart = new SimpleBooleanProperty(this, "gameStart", false);
     SimpleBooleanProperty kitchenOpen = new SimpleBooleanProperty(this, "kitchenOpen", false);
-    String[] pantryItems = new String[]{"Zucchini","Flour","Paprika","Chickpeas","Avocado","Potatoes"};
+    String[] pantryItems = new String[]{"bread","flour","crackers","pepperoni","chocolate","marinara sauce","marshmallows",
+            "cheese","lettuce","patty","dressing","sugar","eggs","icing"};
     Button[] pantry = new Button[pantryItems.length];
 
     public static void main(String[] args) {
